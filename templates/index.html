@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+    <div class="main"> <br>
+    <center>    <h1> <i> Fashion </i>X</h1> 
+        <h2>Browse for best Men's T Shirts</h2>
+    </center>
+    </div>
+    <div class="container"> <br>
+        <center><h2> Answer few questions </h2></center> <br>
+        <div class="container">
+
+
+            <div class="row">
+              <div class="col">
+                  <center> <b>
+                      <label for="size">Select Size</label>
+                <Select name="size" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </Select> </b></center>
+              </div>
+              <div class="col">
+                  <center> <b>
+                    <label for="price">Select Price Range</label>
+
+                <select name="price" id="price">
+                    <option value="300">300</option>
+                    <option value="500">500</option>
+                </select>
+               </b>   </center>
+              </div>
+            </div> <hr>
+           <center> <button class="btn btn-primary" onclick="save()">Submit</button> </center>
+           
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function save(){
+        var price = document.getElementById("price").value;
+        var gender = document.getElementById("gender").value;
+        localStorage['price'] = price;
+        localStorage['gender'] = gender;
+        window.location.href = "http://127.0.0.1:5000/demo";
+    }
+</script>
