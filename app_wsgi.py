@@ -1,5 +1,4 @@
 from flask import Flask , render_template , request
-import pandas as pd
 import csv
 import json
 app = Flask(__name__ , static_folder= "res")
