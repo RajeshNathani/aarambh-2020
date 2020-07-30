@@ -146,7 +146,7 @@ def shoe1():
 @app.route('/api/men/shoes/max' , methods = ["GET" , "POST"])
 def shoe2():
     
-        with open('men_shirts_500.csv') as csv_file:
+        with open('men_shoes_max.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -155,9 +155,9 @@ def shoe2():
                     items.append({
                     "image" : row[0],
                     "name" : row[1],
-                    "price" : row[2],
-                    "seller" : row[4],
-                    "links" : row[5]
+                    "price" : row[4],
+                    "seller" : row[2],
+                    "links" : row[3]
                     })
                 else:
                     first_line = False
@@ -205,7 +205,6 @@ def trou2():
                     first_line = False
         men_ts_300 = json.dumps(items)
         return men_ts_300
-
 
 
 if __name__ == "__main__":
