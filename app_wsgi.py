@@ -26,11 +26,11 @@ def tee1():
             for row in data:
                 if not first_line:
                     items.append({
-                    "image" : row[1],
-                    "name" : row[3],
-                    "price" : row[4],
-                    "seller" : row[6],
-                    "links" : row[7]
+                    "image" : row[0],
+                    "name" : row[1],
+                    "price" : row[2],
+                    "seller" : row[4],
+                    "links" : row[5]
                     })
                 else:
                     first_line = False
