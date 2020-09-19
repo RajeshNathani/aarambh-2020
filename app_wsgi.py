@@ -249,7 +249,7 @@ def jeans():
         return men_ts_300
 
 @app.route('/api/women/footwear' , methods = ["GET" , "POST"])
-def trou2():
+def footwear():
     
         with open('women_footwear.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
@@ -270,7 +270,7 @@ def trou2():
         return men_ts_300
 
 @app.route('/api/women/tops' , methods = ["GET" , "POST"])
-def trou2():
+def tops():
     
         with open('tops.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
