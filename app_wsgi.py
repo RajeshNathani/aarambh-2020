@@ -206,6 +206,90 @@ def trou2():
         men_ts_300 = json.dumps(items)
         return men_ts_300
 
+@app.route('/api/women/kurtis' , methods = ["GET" , "POST"])
+def kurti():
+    
+        with open('kurtis_women.csv') as csv_file:
+            data = csv.reader(csv_file, delimiter=',')
+            first_line = True
+            items = []
+            for row in data:
+                if not first_line:
+                    items.append({
+                    "image" : row[1],
+                    "name" : row[3],
+                    "price" : row[4],
+                    "seller" : row[6],
+                    "links" : row[7]
+                    })
+                else:
+                    first_line = False
+        men_ts_300 = json.dumps(items)
+        return men_ts_300
+
+@app.route('/api/women/jeans' , methods = ["GET" , "POST"])
+def jeans():
+    
+        with open('jeans_women.csv') as csv_file:
+            data = csv.reader(csv_file, delimiter=',')
+            first_line = True
+            items = []
+            for row in data:
+                if not first_line:
+                    items.append({
+                    "image" : row[1],
+                    "name" : row[3],
+                    "price" : row[5],
+                    "seller" : row[7],
+                    "links" : row[8]
+                    })
+                else:
+                    first_line = False
+        men_ts_300 = json.dumps(items)
+        return men_ts_300
+
+@app.route('/api/women/footwear' , methods = ["GET" , "POST"])
+def trou2():
+    
+        with open('women_footwear.csv') as csv_file:
+            data = csv.reader(csv_file, delimiter=',')
+            first_line = True
+            items = []
+            for row in data:
+                if not first_line:
+                    items.append({
+                    "image" : row[1],
+                    "name" : row[3],
+                    "price" : row[4],
+                    "seller" : row[6],
+                    "links" : row[7]
+                    })
+                else:
+                    first_line = False
+        men_ts_300 = json.dumps(items)
+        return men_ts_300
+
+@app.route('/api/women/tops' , methods = ["GET" , "POST"])
+def trou2():
+    
+        with open('tops.csv') as csv_file:
+            data = csv.reader(csv_file, delimiter=',')
+            first_line = True
+            items = []
+            for row in data:
+                if not first_line:
+                    items.append({
+                    "image" : row[1],
+                    "name" : row[3],
+                    "price" : row[4],
+                    "seller" : row[6],
+                    "links" : row[7]
+                    })
+                else:
+                    first_line = False
+        men_ts_300 = json.dumps(items)
+        return men_ts_300
+
 
 if __name__ == "__main__":
     app.run(debug=True)
