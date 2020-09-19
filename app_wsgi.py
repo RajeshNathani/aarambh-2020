@@ -251,7 +251,7 @@ def jeans():
 @app.route('/api/women/footwear' , methods = ["GET" , "POST"])
 def footwear():
     
-        with open('women_footwear.csv') as csv_file:
+        with open('footwear_women.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
