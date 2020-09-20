@@ -11,7 +11,7 @@ def index():
 @app.route('/api/men/tshirts/300' , methods = ["GET" , "POST"])
 def tee1():
     
-        with open('men_tshirts_300.csv') as csv_file:
+        with open('men_tshirts_1.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -32,7 +32,7 @@ def tee1():
 @app.route('/api/men/tshirts/500' , methods = ["GET" , "POST"])
 def tee2():
     
-        with open('men_tshirts_500.csv') as csv_file:
+        with open('men_tshirts_2.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -54,7 +54,7 @@ def tee2():
 @app.route('/api/men/tshirts/max' , methods = ["GET" , "POST"])
 def tee3():
     
-        with open('men_tshirts_max.csv') as csv_file:
+        with open('men_tshirts_3.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -75,7 +75,7 @@ def tee3():
 @app.route('/api/men/shirts/max' , methods = ["GET" , "POST"])
 def tee4():
     
-        with open('men_shirts_max.csv') as csv_file:
+        with open('men_shirts_3.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -96,7 +96,7 @@ def tee4():
 @app.route('/api/men/shirts/500' , methods = ["GET" , "POST"])
 def tee5():
     
-        with open('men_shirts_500.csv') as csv_file:
+        with open('men_shirts_2.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -117,7 +117,7 @@ def tee5():
 @app.route('/api/men/shoes/900' , methods = ["GET" , "POST"])
 def shoe1():
     
-        with open('men_shoes_900.csv') as csv_file:
+        with open('men_shoes_2.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -138,7 +138,7 @@ def shoe1():
 @app.route('/api/men/shoes/max' , methods = ["GET" , "POST"])
 def shoe2():
     
-        with open('men_shoes_max.csv') as csv_file:
+        with open('men_shoes_3.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -159,7 +159,7 @@ def shoe2():
 @app.route('/api/men/trouser/500' , methods = ["GET" , "POST"])
 def trou1():
     
-        with open('men_trousers_500.csv') as csv_file:
+        with open('men_trousers_2.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
@@ -180,7 +180,7 @@ def trou1():
 @app.route('/api/men/trouser/max' , methods = ["GET" , "POST"])
 def trou2():
     
-        with open('men_trousers_max.csv') as csv_file:
+        with open('men_trousers_3.csv') as csv_file:
             data = csv.reader(csv_file, delimiter=',')
             first_line = True
             items = []
