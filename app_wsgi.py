@@ -8,14 +8,6 @@ app = Flask(__name__ , static_folder= "res")
 def index():
     return render_template("index.html")
 
-@app.route('/home')
-def home():
-    return render_template("home.html")
-
-@app.route('/demo')
-def demo():
-    return render_template("demo.html")
-
 @app.route('/api/men/tshirts/300' , methods = ["GET" , "POST"])
 def tee1():
     
