@@ -12,7 +12,7 @@ For Frontend:
 2. CSS3 + UIKit Framework(https://getuikit.com/)
 3. Javascript
 <br>
-# For compilation:
+# For compilation: <br>
 Adobe Phonegap to create android and windows phone app(https://build.phonegap.com/apps/4036918/share).
 App can be downloaded with the above link. This app is our main submission.
 
