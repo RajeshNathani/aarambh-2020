@@ -6,4 +6,9 @@ inputs and save those as your prefernces, then show you products based on that f
 so that you don't have to input again.This will save time of user and show him/her personalised products.
 
 ## Technologies
-1. Flask for apis(hosted on heroku)(link will be updated soon).
+1. Flask for apis(hosted on heroku)(https://fashionxapi.herokuapp.com/).
+For Frontend:
+1. HTML/HTML5
+2. CSS3 + UIKit Framework(https://getuikit.com/)
+3. Javascript
+
